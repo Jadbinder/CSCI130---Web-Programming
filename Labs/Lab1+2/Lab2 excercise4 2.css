@@ -1,0 +1,27 @@
+body{
+	background-color: #c0c0c0;
+}
+
+.title{
+	text-align: center;
+}
+
+.semester{
+	text-decoration: underline;
+}
+
+p{
+	text-indent: 50px;
+}
+
+.referenceinfo{
+	list-style-type: none;
+}
+
+table{
+	width: 100%;
+}
+
+thead,th,td,tfoot{
+		border: solid black;
+}

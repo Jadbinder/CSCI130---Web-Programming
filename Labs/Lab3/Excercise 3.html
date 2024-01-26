@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8" />
+<title>Lab3 Excercise 3</title>
+<link rel="stylesheet" href="Excercise3.css">
+</head>
+
+<body>
+
+<form action="/action_page.php">
+	<label for="firstname">First name:</label><br>
+	<input type="text" id="firstname" name="firstname">
+</form>
+
+<hr>
+
+<form>
+	<label for="lastname">Last name:</label><br>
+	<input type="text" id="lastname" name="lastname">
+</form>
+
+<hr>
+
+
+<form>
+	<label for="City">City:</label><br>
+	<input type="text" id=""City" name="city">
+</form>
+
+<hr>
+
+<form>
+	<label for="State">State:</label><br>
+	<select id="State" name="State">
+		<option value="AL">Alabama</option>
+		<option value="AK">Alaska</option>
+		<option value="AZ">Arizona</option>
+		<option value="CA">California</option>
+		<option value="WA">Washington</option>
+	</select>
+</form>
+
+<hr>
+
+<form>
+	<label for="Zipcode">Zipcode:</label><br>
+	<input type="zipcode" id="Zipcode" name="Zipcode" placeholder="xxxxx" pattern="\d{5}">
+</form>
+
+<hr>
+
+<form>
+	<label for="Date">Date:</label><br>
+	<input type="text" id="Date" name="Date" placeholder="mm/dd/yyyy" pattern="[0-9]{1}[1-9]{1}/[0-9]{1}[1-9]{1}/[0-9]{4}">
+</form>
+
+<hr>
+
+<form>
+	<label for="Phone">Phone:</label><br>
+	<input type="tel" id="Phone" name="Phone" placeholder="x-xxx-xxx-xxxx" pattern="\d{11}">
+</form>
+
+<hr>
+
+<fieldset>
+	<label for="Card">Credit Card:</label><br>
+	<input type="text" id="Card" name="Card" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16" minlength="16" " required><br>
+	<label for="Expiration">Expiration Date:</label><br>
+	<input type="text" id="Expiration" name="Expiration" placeholder="mm/dd" pattern="[0-9]{1}[1-9]{1}/[0-9]{1}[1-9]{1}"><br>
+	<label for="Security">Security Number:</label><br>
+	<input type="text" id="Security" name="Security" placeholder="xxx" pattern="\d{3}"><br>
+	
+	<input type="submit" value="Submit">
+	
+	<span class="validity"></span>
+</fieldset>
+
+</body>
+</html>

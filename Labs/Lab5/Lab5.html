@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+<script src ="Lab5.js">
+</script>
+<meta charset="UTF-8" />
+<title>Lab5</title>
+<style>
+	.container{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		}
+	.calculator form input{
+		width: 60px;
+		height: 60px;
+		border-radius: 1px
+		}
+	form .display input{
+		width: 244px;
+		height: 60px;
+		text-align: right;
+		font-size: 45px;
+		}
+	form input.del{
+		width: 124px;
+		}
+</style>
+		
+</head>
+<body>
+<!--calculator-->
+<div class="container">
+	<div class="calculator">
+		<form>
+			<div class ="display">
+				<input type="text" id="display" name="display">
+			</div>
+			<div>
+				<input type="button" value="sqrt" onclick="squareRoot()">
+				<input type="button" value="+/-" onclick="toggleSign();">
+				<input type="button" value="CE" class="del" onclick="clearValues()">
+			</div>
+			<div>
+				<input type="button" value="7" onclick="expression(7)">
+				<input type="button" value="8" onclick="expression(8)">
+				<input type="button" value="9" onclick="expression(9)">
+				<input type="button" value="/" onclick="operator('/')">
+			</div>
+			<div>
+				<input type="button" value="4" onclick="expression(4)">
+				<input type="button" value="5" onclick="expression(5)">
+				<input type="button" value="6" onclick="expression(6)">
+				<input type="button" value="*" onclick="operator('*')">
+			</div>
+			<div>
+				<input type="button" value="1" onclick="expression(1)">
+				<input type="button" value="2" onclick="expression(2)">
+				<input type="button" value="3" onclick="expression(3)">
+				<input type="button" value="-" onclick="operator('-')">
+			</div>
+			<div>
+				<input type="button" value="0" onclick="expression(0)">
+				<input type="button" value="." onclick="expression('.')">
+				<input type="button" value="+" onclick="operator('+')">
+				<input type="button" value="=" onclick="evaluateExpression()">
+			</div>
+		</form>	
+	</div>
+</div>
+
+<br>
+<br>
+<!--matrix-->
+<form name ="matrixARows">
+<label>Rows for matrix A: <input type="text" name="rA" id="rA"/><label><br>
+</form>
+
+<form name ="matrixAColumns">
+<label>Columns for matrix A: <input type="text" name="cA" id="cA"/><label><br>
+</form>
+
+<input name="generate" type="button" value="CreateMatrixA" onclick='createMatrixA();'/>
+
+<div id="generatedMatrixA"></div>
+
+
+<form name ="matrixBRows">
+<label>Rows for matrix B: <input type="text" name="rB" id="rB"/><label><br>
+</form>
+
+<form name ="matrixBColumns">
+<label>Columns for matrix B: <input type="text" name="cB" id="cB"/><label><br>
+</form>
+
+<input name="generate" type="button" value="CreateMatrixB" onclick='createMatrixB();'/>
+
+<div id="generatedMatrixB"></div>
+
+
+</body>
+</html>

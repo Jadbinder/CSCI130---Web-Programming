@@ -1,0 +1,38 @@
+body{
+	background-image: url("groundback.png");
+	background-size: cover;
+}
+
+.title{
+	font-style: italic;
+}
+
+ul.classes{
+	list-style-type: square;
+}
+
+ol{
+	color: #001078;
+}
+
+p{
+	color: red;
+}
+
+table{
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+}
+thead,th,td,tfoot{
+		border: solid #bf3eff;
+		height: 75%
+}
+	
+ul.hobbies{
+	font-family: "Papyrus", fantasy;
+}
+
+h4.references{
+	text-decoration: underline;
+}

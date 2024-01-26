@@ -1,0 +1,74 @@
+.pages {
+	color: white;
+	background-color: white;	
+}
+.pages li{
+	display:inline;
+	font-size: 30px;
+}
+
+img.dog {
+	width: 100px;
+	height: auto;
+	float: right;
+	aspect-ratio: 0;
+}
+img{
+	width: 250px;
+	height:auto;
+	padding: 3px;
+	aspect-ratio: 3/2;
+}
+
+.title {
+	font-size: 10px;
+	color: white;
+	background-color: #b1102b;
+}
+body {
+	position: relative;
+	background-color: #13284c;
+}
+
+.Sectiontitle{
+	color: blue;
+}
+
+p{
+	font-size: 18px;
+	font-family: Verdana, sans-serif;
+}
+
+.Section1{
+	border: 2px solid black;
+	background-color:white;
+	grid-area:top;
+}
+.Section2{
+	border: 2px solid black;
+	background-color:white;
+	grid-area:topleft;
+}
+.Section3{
+	border: 2px solid black;
+	background-color:white;
+	grid-area:topright;
+}
+.Section4{
+	border: 2px solid black;
+	background-color:white;
+	grid-area:bottomleft;
+}
+.Section5{
+	border: 2px solid black;
+	background-color:white;
+	grid-area:bottomright;
+}
+
+.Sectiongrid{
+	display:grid;
+	grid-template-areas:
+	'top top top top top top'
+	'topleft topleft topleft topright topright topright'
+	'bottomleft bottomleft bottomleft bottomright bottomright bottomright'
+}
